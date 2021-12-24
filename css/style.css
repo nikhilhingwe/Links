@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    font-family: 'Source Sans Pro', sans-serif;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+:root{
+    --text-color: #fff;
+    --background-color: linear-gradient(to left,#08151B,#040C0F);
+    --icon-background: #31687D;
+    --li-background: #12262F;
+    --link-text-color: #2B5769;
+}
+
+
+
+/* ================================================================ */
+
+.profile{
+    display: flex;
+    justify-content: center;
+}
+
+.profile__img{
+    margin-top: 20px;
+    height: 120px;
+    width: 120px;
+    background-image: url(/Profile-Image/initial-letters-nh-negative-space-260nw-463361678.webp);
+    background-size: cover;
+    border-radius: 50%;
+    /* mix-blend-mode: multiply; */
+    box-shadow:   0px 0px 2px  2px rgb(117, 106, 106);
+}
+.profile__name{
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 18px;
+}
+
+.name{
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+.pos{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* ================================================================== */
+
+.links{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.links li{
+    background-color: var(--li-background);
+    margin-bottom: 25px;
+    padding: 15px 0px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+ion-icon{
+    font-size: 27px;
+    background: var(--icon-background);
+    margin-right: 20px;
+    padding: 7px;
+    border-radius: 10px;
+}
+.link h3{
+    font-weight: 400;
+}
+
+.link p{
+    color: var(--link-text-color);
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.links li:hover{
+    
+    transform: translateY(-.5rem);
+    transition: ease-in-out 0.7s;
+}
+
+
+
+
+
